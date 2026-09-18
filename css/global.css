@@ -1,7 +1,77 @@
-.header-custom {
-    margin-top: 5px;
+/* =====================================================
+   NA SPORT - GLOBAL CSS
+   Các thiết lập dùng chung cho toàn bộ website
+   ===================================================== */
+
+
+/* =========================
+   COLOR SYSTEM
+   ========================= */
+
+:root {
+    --nas-green: #16a34a;
+    --nas-green-dark: #15803d;
+    --nas-green-light: #f0fdf4;
+
+    --nas-red: #ef233c;
+
+    --nas-black: #111827;
+    --nas-gray-dark: #374151;
+    --nas-gray: #6b7280;
+    --nas-gray-light: #f3f4f6;
+
+    --nas-border: #e5e7eb;
+
+    --nas-white: #ffffff;
 }
 
+
+/* =========================
+   GLOBAL RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    display: flex;
+    margin: 0;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    color: var(--nas-black);
+    background-color: var(--nas-white);
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   GLOBAL LINK
+   ========================= */
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   GLOBAL IMAGE
+   ========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
 }
