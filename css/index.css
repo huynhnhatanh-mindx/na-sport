@@ -1,0 +1,319 @@
+/* =====================================================
+   NA SPORT - INDEX CSS
+   Style riêng cho trang chủ
+   ===================================================== */
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.nas-header {
+    background: var(--nas-white);
+
+    border-bottom: 1px solid var(--nas-border);
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1030;
+}
+
+
+.nas-header-inner {
+    min-height: 78px;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.nas-logo {
+    display: flex;
+    align-items: center;
+
+    width: 145px;
+    height: 65px;
+
+    text-decoration: none;
+}
+
+
+.nas-logo img {
+    width: 145px;
+    height: 65px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* =========================
+   NAVIGATION MENU
+   ========================= */
+
+.nas-menu {
+    gap: 4px;
+}
+
+
+.nas-menu-link {
+    color: var(--nas-black);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    padding: 10px 14px !important;
+
+    border-radius: 8px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.nas-menu-link:hover,
+.nas-menu-link:focus {
+    color: var(--nas-green-dark);
+
+    background-color: var(--nas-green-light);
+}
+
+
+.nas-menu-link.nas-active {
+    color: var(--nas-green-dark);
+}
+
+
+/* =========================
+   DROPDOWN
+   ========================= */
+
+.nas-dropdown-menu {
+    min-width: 230px;
+
+    padding: 8px;
+
+    margin-top: 8px !important;
+
+    background: var(--nas-white);
+
+    border: 1px solid var(--nas-border);
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+.nas-dropdown-item {
+    padding: 10px 14px;
+
+    color: var(--nas-black);
+
+    font-size: 0.92rem;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.nas-dropdown-item:hover,
+.nas-dropdown-item:focus {
+    color: var(--nas-green-dark);
+
+    background-color: var(--nas-green-light);
+}
+
+
+/* =========================
+   AUTHENTICATION
+   ========================= */
+
+.nas-auth {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.nas-login-btn,
+.nas-register-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.nas-login-btn {
+    color: var(--nas-green-dark);
+
+    background-color: var(--nas-white);
+
+    border: 1px solid var(--nas-green);
+}
+
+
+.nas-login-btn:hover {
+    color: var(--nas-white);
+
+    background-color: var(--nas-green);
+
+    border-color: var(--nas-green);
+}
+
+
+/* =========================
+   REGISTER BUTTON
+   ========================= */
+
+.nas-register-btn {
+    color: var(--nas-white);
+
+    background-color: var(--nas-green);
+
+    border: 1px solid var(--nas-green);
+}
+
+
+.nas-register-btn:hover {
+    color: var(--nas-white);
+
+    background-color: var(--nas-green-dark);
+
+    border-color: var(--nas-green-dark);
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 991.98px) {
+
+    .nas-header-inner {
+        min-height: 70px;
+    }
+
+
+    /* Logo */
+
+    .nas-logo {
+        width: 125px;
+        height: 58px;
+    }
+
+
+    .nas-logo img {
+        width: 125px;
+        height: 58px;
+    }
+
+
+    /* Menu */
+
+    .nas-menu {
+        padding-top: 15px;
+        padding-bottom: 10px;
+
+        gap: 2px;
+    }
+
+
+    .nas-menu-link {
+        width: 100%;
+
+        padding: 12px 14px !important;
+    }
+
+
+    /* Dropdown */
+
+    .nas-dropdown-menu {
+        margin-top: 0 !important;
+        margin-bottom: 8px;
+
+        background-color: #fafafa;
+
+        box-shadow: none;
+    }
+
+
+    /* Authentication */
+
+    .nas-auth {
+        width: 100%;
+
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+
+    .nas-login-btn,
+    .nas-register-btn {
+        flex: 1;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 575.98px) {
+
+    .nas-logo {
+        width: 110px;
+        height: 52px;
+    }
+
+
+    .nas-logo img {
+        width: 110px;
+        height: 52px;
+    }
+
+
+    .nas-auth {
+        flex-direction: column;
+    }
+
+
+    .nas-login-btn,
+    .nas-register-btn {
+        width: 100%;
+    }
+}

@@ -1,49 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/index.css">
-    </head>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NA Sport</title>
+
+
+    <!-- Bootstrap 5.3.8 -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+
+    <!-- CSS dùng chung -->
+
+    <link
+        rel="stylesheet"
+        href="../css/global.css"
+    >
+
+
+    <!-- CSS riêng trang chủ -->
+
+    <link
+        rel="stylesheet"
+        href="../css/index.css"
+    >
+
+</head>
+
 
 <body>
-    <!-- Phần header  -->
-    <div class="container header-custom">
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">NA Sport</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+    <!-- HEADER -->
+
+    <header class="nas-header">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container nas-header-inner">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="#"
+                    class="nas-logo"
+                    aria-label="NA Sport"
+                >
+
+                    <img
+                        src="../assets/img/logo.png"
+                        alt="NA Sport"
+                    >
+
+                </a>
+
+
+                <!-- MOBILE TOGGLE -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nasMainMenu"
+                    aria-controls="nasMainMenu"
+                    aria-expanded="false"
+                    aria-label="Mở menu"
+                >
+
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+
+
+                <!-- MENU -->
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="nasMainMenu"
+                >
+
+                    <ul class="navbar-nav mx-lg-auto nas-menu">
+
+
+                        <!-- TRANG CHỦ -->
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                            <a
+                                href="#"
+                                class="nav-link nas-menu-link nas-active"
+                            >
+                                Trang chủ
+                            </a>
+
                         </li>
+
+
+                        <!-- DANH MỤC -->
+
+                        <li class="nav-item dropdown">
+
+                            <a
+                                href="#"
+                                class="nav-link dropdown-toggle nas-menu-link"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Danh mục
+                            </a>
+
+
+                            <ul class="dropdown-menu nas-dropdown-menu">
+
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="dropdown-item nas-dropdown-item"
+                                    >
+                                        Áo thể thao
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="dropdown-item nas-dropdown-item"
+                                    >
+                                        Quần thể thao
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="dropdown-item nas-dropdown-item"
+                                    >
+                                        Dụng cụ thể thao
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- LIÊN HỆ -->
+
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+
+                            <a
+                                href="#"
+                                class="nav-link nas-menu-link"
+                            >
+                                Liên hệ
+                            </a>
+
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="signup.html">Signup</a>
-                        </li>
+
                     </ul>
+
+
+                    <!-- ĐĂNG NHẬP / ĐĂNG KÝ -->
+
+                    <div class="nas-auth">
+
+                        <a
+                            href="#"
+                            class="nas-login-btn"
+                        >
+                            Đăng nhập
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="nas-register-btn"
+                        >
+                            Đăng ký
+                        </a>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </nav>
-    </div>
+
+    </header>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <!-- Nội dung trang chủ sẽ đặt ở đây -->
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"
+    ></script>
+
 </body>
 
 </html>
